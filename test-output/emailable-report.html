@@ -8,129 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Testing testng</th></tr>
-<tr><td><a href="#t0">ParametersTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">20,527</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">ParametersTest1</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">20,043</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num">0</th><th class="num">0</th><th class="num">40,570</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">69</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Testing testng</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ParametersTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">parameters.ParametersExample</td><td><a href="#m0">setup</a></td><td rowspan="1">1677578351654</td><td rowspan="1">20480</td></tr><tr><th colspan="4">ParametersTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">parameters.ParametersExample</td><td><a href="#m1">teardown</a></td><td rowspan="1">1677578372161</td><td rowspan="1">0</td></tr><tr><th colspan="4">ParametersTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">parameters.ParametersExample</td><td><a href="#m2">homePageTitle</a></td><td rowspan="1">1677578372157</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">logoTest</a></td><td rowspan="1">1677578372151</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">ParametersTest1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">parameters.ParametersExample</td><td><a href="#m4">setup</a></td><td rowspan="1">1677578372216</td><td rowspan="1">20029</td></tr><tr><th colspan="4">ParametersTest1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">parameters.ParametersExample</td><td><a href="#m5">teardown</a></td><td rowspan="1">1677578392256</td><td rowspan="1">0</td></tr><tr><th colspan="4">ParametersTest1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">parameters.ParametersExample</td><td><a href="#m6">homePageTitle</a></td><td rowspan="1">1677578392252</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">logoTest</a></td><td rowspan="1">1677578392248</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">dataprovider.DataProviderExample</td><td><a href="#m0">loginTest</a></td><td rowspan="3">1677579096666</td><td rowspan="3">11</td></tr><tr class="passedeven"><td><a href="#m1">loginTest</a></td></tr><tr class="passedeven"><td><a href="#m2">loginTest</a></td></tr></tbody>
 </table>
-<h2>ParametersTest</h2><h3 id="m0">parameters.ParametersExample#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>firefox</td><td>https://opensource-demo.orangehrmlive.com/</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">parameters.ParametersExample#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">parameters.ParametersExample#homePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">parameters.ParametersExample#logoTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>ParametersTest1</h2><h3 id="m4">parameters.ParametersExample#setup</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>firefox</td><td>https://opensource-demo.orangehrmlive.com/</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">parameters.ParametersExample#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">parameters.ParametersExample#homePageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">parameters.ParametersExample#logoTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;DESKTOP-U9123IR&apos;, ip: &apos;192.168.150.1&apos;
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:229)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:130)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:111)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:101)
-	at parameters.ParametersExample.setup(ParametersExample.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver process to start.
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:218)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	... 30 more
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">dataprovider.DataProviderExample#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>abc@gmail.com</td><td>abc</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dataprovider.DataProviderExample#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mno@gmail.com</td><td>mno</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dataprovider.DataProviderExample#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>xyz@gmail.com</td><td>xyz</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
