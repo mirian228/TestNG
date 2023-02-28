@@ -2,21 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Testing testng">
 	
-	<test name="GroupingTest">
-	
-		<groups>
-			<run>
-			<include name="sanity"/>
-			<exclude name="regression"/>	
-			</run>	
-		</groups>
-		
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+	<test name="ParametersTest">
 		<classes>
-			
-			<class name="grouping.GroupingExample">
-			</class>
-		
+			<class name="parameters.ParametersExample"></class>
 		</classes>
+	</test>
 	
+	<parameter name="browser" value="firefox" />
+	<parameter name="url" value="https://opensource-demo.orangehrmlive.com/" />
+	<test name="ParametersTest1">
+		<classes>
+			<class name="parameters.ParametersExample"></class>
+		</classes>
 	</test>
 </suite>

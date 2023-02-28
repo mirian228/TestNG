@@ -14,7 +14,7 @@ public class AssertionsExample {
 
 	@BeforeClass
 	void setup() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Dev\\Drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Dev\\Drivers\\chrome\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
