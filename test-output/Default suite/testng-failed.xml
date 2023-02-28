@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parameters.ParametersExample">
+      <class name="paralleltesting.ParallelTest2">
         <methods>
           <include name="teardown"/>
-          <include name="logoTest"/>
-          <include name="setup"/>
+          <include name="LoginTest"/>
         </methods>
-      </class> <!-- parameters.ParametersExample -->
+      </class> <!-- paralleltesting.ParallelTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
