@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="paralleltesting.ParallelTest2">
+      <class name="listeners.ListenerTest">
         <methods>
-          <include name="teardown"/>
-          <include name="LoginTest"/>
+          <include name="test2"/>
+          <include name="test3"/>
         </methods>
-      </class> <!-- paralleltesting.ParallelTest2 -->
+      </class> <!-- listeners.ListenerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
